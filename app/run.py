@@ -77,7 +77,7 @@ def wordcloud_to_ploty(df):
                 y=y,
                 textfont=dict(size=new_freq_list,
                               color=color_list),
-                hoverinfo='text',   
+                hoverinfo='text',
                 hovertext=['{0}{1}'.format(w, f) for w, f in zip(word_list, freq_list)],
                 mode='text',
                 text=word_list
