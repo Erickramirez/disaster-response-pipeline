@@ -1,0 +1,6 @@
+Pipeline(steps=[('vect',
+                 CountVectorizer(tokenizer=<function tokenize at 0x000001B602598E18>)),
+                ('tfidf', TfidfTransformer()),
+                ('clf',
+                 MultiOutputClassifier(estimator=RandomForestClassifier(),
+                                       n_jobs=-1))]) best_estimator.txt
