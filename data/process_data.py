@@ -33,8 +33,16 @@ def clean_data(df):
     df = df.drop(['categories'], axis=1)
     df = pd.concat([df, categories], axis=1) # concatenate the two dataframes
     df = df.drop_duplicates()
-    df.related = df.related.replace(2, 1) #related has 3 posible values: 0,1,2. use only 0 and 1 instead
-    df = df.drop(['child_alone'], axis=1) #remove useless column
+    # transform 'related' data to binary options (dummies)
+    dummies = pd.get_dummies(df['related'])
+    dummies_column_names = []
+    for col in dummies.columns:
+        dummies_column_names.append(f"related_{col}")
+    dummies.columns = dummies_column_names
+    df = pd.concat([df, dummies], axis=1)
+    df = df.drop(['child_alone'], axis=1)  # it only have values equal to 0
+    df = df.drop(['related'], axis=1)  # it has been replaced by dummies
+
     return df
 
 

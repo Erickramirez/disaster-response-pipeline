@@ -1,0 +1,45 @@
+                        precision    recall  f1-score   support
+
+               request       0.84      0.54      0.65       899
+                 offer       0.00      0.00      0.00        16
+           aid_related       0.75      0.70      0.73      2172
+          medical_help       0.70      0.09      0.16       420
+      medical_products       0.76      0.07      0.13       273
+     search_and_rescue       0.71      0.08      0.15       121
+              security       0.00      0.00      0.00        85
+              military       0.57      0.05      0.08       175
+                 water       0.88      0.38      0.53       351
+                  food       0.83      0.61      0.70       612
+               shelter       0.84      0.39      0.53       459
+              clothing       0.75      0.13      0.22        70
+                 money       1.00      0.04      0.07       111
+        missing_people       0.00      0.00      0.00        58
+              refugees       0.50      0.07      0.12       162
+                 death       0.91      0.13      0.22       254
+             other_aid       0.79      0.03      0.05       695
+infrastructure_related       0.00      0.00      0.00       353
+             transport       0.74      0.07      0.13       236
+             buildings       0.86      0.13      0.23       236
+           electricity       1.00      0.02      0.04       101
+                 tools       0.00      0.00      0.00        30
+             hospitals       0.00      0.00      0.00        54
+                 shops       0.00      0.00      0.00        26
+           aid_centers       0.00      0.00      0.00        70
+  other_infrastructure       0.00      0.00      0.00       233
+       weather_related       0.87      0.70      0.78      1390
+                floods       0.90      0.43      0.58       409
+                 storm       0.77      0.48      0.59       488
+                  fire       0.00      0.00      0.00        52
+            earthquake       0.89      0.78      0.84       465
+                  cold       0.92      0.10      0.18       109
+         other_weather       0.75      0.05      0.09       255
+         direct_report       0.80      0.40      0.53      1032
+             related_0       0.75      0.41      0.53      1268
+             related_1       0.84      0.94      0.89      3940
+             related_2       0.28      0.28      0.28        36
+
+             micro avg       0.82      0.52      0.64     17716
+             macro avg       0.57      0.22      0.27     17716
+          weighted avg       0.76      0.52      0.57     17716
+           samples avg       0.74      0.57      0.59     17716
+ classification_report.txt
